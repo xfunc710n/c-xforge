@@ -12,6 +12,16 @@ SRC += ./src/xfunc710n/xforge/memory/TStackAllocator.c
 SRC += ./src/xfunc710n/xforge/memory/TPoolAllocator.c
 SRC += ./src/xfunc710n/xforge/memory/TFreeListAllocator.c
 
+SRC += ./src/xfunc710n/xforge/utility/hash/AP.c
+SRC += ./src/xfunc710n/xforge/utility/hash/BKDR.c
+SRC += ./src/xfunc710n/xforge/utility/hash/DEK.c
+SRC += ./src/xfunc710n/xforge/utility/hash/DJB.c
+SRC += ./src/xfunc710n/xforge/utility/hash/ELF.c
+SRC += ./src/xfunc710n/xforge/utility/hash/JS.c
+SRC += ./src/xfunc710n/xforge/utility/hash/PJW.c
+SRC += ./src/xfunc710n/xforge/utility/hash/RS.c
+SRC += ./src/xfunc710n/xforge/utility/hash/SDBM.c
+
 OBJ = $(patsubst %.c,%.o,$(SRC))
 
 debug: CFLAGS += -g
