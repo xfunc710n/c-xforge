@@ -129,8 +129,8 @@
 #define UInt64 uint64_t
 
 #define Boolean bool
-#define False   0
-#define True    1
+#define False   false
+#define True    true
 
 #define SPointer  intptr_t
 #define UPointer uintptr_t
@@ -297,5 +297,11 @@
 #define IMPLEMENTATION_TPoolAllocator 3
 
 #define IMPLEMENTATION_TFreeListAllocator 4
+
+#ifdef IMPLEMENTATION_TString
+#error "The \"IMPLEMENTATION_TString\" macro is already defined."
+#endif
+
+#define IMPLEMENTATION_TString 5
 
 #endif

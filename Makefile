@@ -22,6 +22,8 @@ SRC += ./src/xfunc710n/xforge/utility/hash/PJW.c
 SRC += ./src/xfunc710n/xforge/utility/hash/RS.c
 SRC += ./src/xfunc710n/xforge/utility/hash/SDBM.c
 
+SRC += ./src/xfunc710n/xforge/TString.c
+
 OBJ = $(patsubst %.c,%.o,$(SRC))
 
 debug: CFLAGS += -g
