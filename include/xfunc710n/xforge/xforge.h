@@ -298,6 +298,12 @@
 
 #define IMPLEMENTATION_TFreeListAllocator 4
 
+typedef struct
+{
+  Boolean option;
+  USize   index;
+} RIndex;
+
 #ifdef IMPLEMENTATION_TString
 #error "The \"IMPLEMENTATION_TString\" macro is already defined."
 #endif
